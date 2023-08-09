@@ -1,0 +1,9 @@
+{
+	"name": "NkADFWITHGIthub",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1e72384e-6d22-4fa9-8b9b-8afcce31de38",
+		"tenantId": "f014d062-bbe5-4433-8c31-34631acb9f53"
+	}
+}
