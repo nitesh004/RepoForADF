@@ -1,0 +1,33 @@
+{
+	"name": "ExecutePipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute Pipeline",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "copypipeline",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"parameters": {
+			"filename": {
+				"type": "string",
+				"defaultValue": "fileread"
+			},
+			"containername": {
+				"type": "string",
+				"defaultValue": "container"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2023-08-04T04:14:05Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

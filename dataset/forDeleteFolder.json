@@ -1,0 +1,19 @@
+{
+	"name": "forDeleteFolder",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedservice_nstorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "new.txt",
+				"container": "secondcontaainer"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,27 @@
+{
+	"name": "eventbasedtrigger",
+	"properties": {
+		"description": "copy data when the file created in first container",
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "copypipeline",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/firstcontainer/blobs/avnish",
+			"blobPathEndsWith": ".pdf",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/302b3bff-1e78-4e13-96ac-6f1d36b35f69/resourceGroups/NKstoreage/providers/Microsoft.Storage/storageAccounts/nstoreage",
+			"events": [
+				"Microsoft.Storage.BlobCreated",
+				"Microsoft.Storage.BlobDeleted"
+			]
+		}
+	}
+}
